@@ -9,7 +9,11 @@ export default function defaultEx() {
    * if no input is provided
    */
    
-   //const greeting =
-   // console.log(greeting());
-   // console.log(greeting('hi', 'harry', 'hedger')); 
+   const greeting = (greeting ='hello', firstName = 'harry', lastName = 'hedger') =>{
+       return `${greeting} ${firstName} ${lastName}`
+   }
+    console.log(greeting());
+    console.log(greeting('yo', 'harry', 'hedger')); 
+    console.log(greeting('yo', '', 'hedger')); 
+    // console.log(greeting('yo', null, 'hedger')); 
 }

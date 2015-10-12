@@ -5,15 +5,15 @@ export default function arrowExpressions() {
   /*
    * Write an arrow expression that returns the number 5.
    */
-  // const get5 = 
-  // console.log('get5:', get5());
+   const get5 = () => 5;
+   console.log('get5:', get5());
 
 
   /** 
    * Write an arrow expression that takes a number 'a' and adds 5 to it.
    **/
-  // const add5 = 
-  // console.log('add5: ', add5(5));
+  const add5 = a => a+ 5;
+  console.log('add5: ', add5(5));
 
 
   /** 
@@ -26,7 +26,7 @@ export default function arrowExpressions() {
    *   })
    *  }
    **/
-  // const add5Array = 
-  // console.log('add5Array: ', add5Array([1, 2, 3, 4, 5]));
+  const add5Array = arr => arr.map(element => element += 5);
+  console.log('add5Array: ', add5Array([1, 2, 3, 4, 5]));
 }
 

@@ -9,5 +9,7 @@ export default function destructure() {
    * Bonus points for using string interpolation!
    */
    
-   //console.log()
+   const obj = {greeting: 'hello' , firstName: 'harry', lastName: 'hedger' };
+   const {greeting, lastName} = obj;
+   console.log(`destructure greeting ${greeting} mre ${lastName}`);
 }
